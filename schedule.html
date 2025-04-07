@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symposium Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Symposium on AI in Process Systems / Manufacturing</div>
+        <nav>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="schedule">
+            <h1>Symposium Schedule</h1>
+            <h2>Day 1: [Date]</h2>
+            <ul>
+                <li><strong>9:00 AM - 10:00 AM:</strong> Opening Keynote - "The Future of AI in Manufacturing" by Dr. Jane Doe</li>
+                <li><strong>10:15 AM - 11:15 AM:</strong> Session 1 - "AI Techniques for Process Optimization" by Dr. John Smith</li>
+                <li><strong>11:30 AM - 12:30 PM:</strong> Panel Discussion - "Challenges in AI Implementation"</li>
+                <li><strong>12:30 PM - 1:30 PM:</strong> Lunch Break</li>
+                <li><strong>1:30 PM - 2:30 PM:</strong> Session 2 - "Data-Driven Decision Making" by Dr. Emily White</li>
+                <li><strong>2:45 PM - 3:45 PM:</strong> Workshop - "Hands-On with AI Tools"</li>
+                <li><strong>4:00 PM - 5:00 PM:</strong> Closing Remarks</li>
+            </ul>
+            <h2>Day 2: [Date]</h2>
+            <ul>
+                <li><strong>9:00 AM - 10:00 AM:</strong> Keynote - "AI and Sustainability" by Dr. Alan Green</li>
+                <li><strong>10:15 AM - 11:15 AM:</strong> Session 3 - "AI in Supply Chain Management" by Dr. Sarah Brown</li>
+                <li><strong>11:30 AM - 12:30 PM:</strong> Roundtable - "The Ethics of AI"</li>
+                <li><strong>12:30 PM - 1:30 PM:</strong> Lunch Break</li>
+                <li><strong>1:30 PM - 2:30 PM:</strong> Session 4 - "Future Trends in AI" by Dr. Michael Black</li>
+                <li><strong>2:45 PM - 3:45 PM:</strong> Networking Session</li>
+                <li><strong>4:00 PM - 5:00 PM:</strong> Closing Ceremony</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>

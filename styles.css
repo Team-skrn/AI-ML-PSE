@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu, .mobile-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a, .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu-button {
+    display: none;
+    background-color: #004080;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #004080;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mobile-menu a {
+    padding: 5px 0;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #004080;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}

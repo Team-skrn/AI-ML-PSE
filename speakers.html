@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers - Symposium 2023</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming a separate CSS file for styles -->
+</head>
+<body>
+    <header>
+        <div class="logo">Symposium on AI in Process Systems / Manufacturing</div>
+        <nav>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="speakers">
+            <h1>Speakers</h1>
+            <p>We are excited to welcome a diverse group of speakers who are leaders in the field of AI in Process Systems and Manufacturing. Below is a list of our confirmed speakers:</p>
+            <ul>
+                <li>
+                    <h2>Dr. Jane Smith</h2>
+                    <p>Topic: Innovations in AI for Manufacturing</p>
+                    <p>Bio: Dr. Smith is a leading researcher in AI applications in manufacturing processes.</p>
+                    <a href="https://www.example.com/janesmith">More about Dr. Smith</a>
+                </li>
+                <li>
+                    <h2>Prof. John Doe</h2>
+                    <p>Topic: The Future of AI in Process Systems</p>
+                    <p>Bio: Prof. Doe has over 20 years of experience in AI and process optimization.</p>
+                    <a href="https://www.example.com/johndoe">More about Prof. Doe</a>
+                </li>
+                <li>
+                    <h2>Dr. Emily Johnson</h2>
+                    <p>Topic: Machine Learning in Manufacturing</p>
+                    <p>Bio: Dr. Johnson specializes in machine learning techniques for industrial applications.</p>
+                    <a href="https://www.example.com/emilyjohnson">More about Dr. Johnson</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>

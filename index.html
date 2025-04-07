@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symposium Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            gap: 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .menu-button {
+            display: none;
+            background-color: #004080;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background-color: #004080;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .mobile-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+            .menu-button {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Symposium on AI in Process Systems / Manufacturing</div>
+        <nav>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>Welcome on AI in Process Systems / Manufacturing</h1>
+            <p>Join us for an exciting event filled with insightful talks and networking opportunities.</p>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>

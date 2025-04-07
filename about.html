@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Symposium 2023</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming a separate CSS file for styles -->
+</head>
+<body>
+    <header>
+        <div class="logo">Symposium on AI in Process Systems / Manufacturing</div>
+        <nav>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>About the Symposium</h1>
+            <p>The Symposium on AI in Process Systems / Manufacturing aims to bring together experts and enthusiasts in the field of artificial intelligence and its applications in process systems and manufacturing. Our goal is to foster collaboration, share knowledge, and explore innovative solutions that leverage AI technologies.</p>
+            <p>This year's event will feature keynote speakers, panel discussions, and networking opportunities designed to inspire and engage participants from various sectors.</p>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>
